@@ -1,0 +1,67 @@
+@import "./variables";
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: $main-padding;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    &__list {
+        padding-right: 20px;
+        list-style: none;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        li {
+
+            a {
+                &:hover {
+                    color: $magenta;
+                }
+            }
+
+            &::after {
+                content: "|";
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            &:nth-last-child(1){
+                &::after {
+                    content: "";
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+
+.lang {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: $magenta;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $pink;
+    }
+
+    p {
+        color: white;
+        font-weight: 500;
+    }
+    
+}

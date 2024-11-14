@@ -1,0 +1,92 @@
+@import "./variables";
+
+.about {
+    position: relative;
+    padding: $main-padding;
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        gap: 100px;
+
+        &--desc {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+
+        }
+
+        &--skills {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+        }
+    }
+
+    &__arrows {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__title {
+        margin-bottom: $margin-titles;
+    }
+}
+
+.about-img {
+    position: relative;
+    width: 100%;
+    height: 250px;
+
+    &__pic {
+        position: absolute;
+        width: 230px;
+        height: 230px;
+        border-radius: 100%;
+        background-image: url(../images/profile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        transform: translateY(-20px)
+    }
+    
+    &__circles {
+        width: 100%;
+        position: absolute;
+        left: 30px;
+        z-index: 0;
+
+        &--1 {
+            width: 230px;
+            height: 230px;
+            border-radius: 100%;
+            background-color: $light-pink;
+        }
+
+        &--2 {
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            background-color: $light-pink;
+            transform: translate(250px, -250px);
+        }
+
+        &--3 {
+            width: 90px;
+            height: 90px;
+            border-radius: 100%;
+            background-color: $light-pink;
+            transform: translate(370px, -230px);
+        }
+    }
+}

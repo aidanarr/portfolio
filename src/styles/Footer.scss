@@ -1,0 +1,24 @@
+@import "./variables";
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $main-padding;
+
+    a{
+        font-size: 26px;
+        margin-right: 15px;
+        color: $magenta;
+
+        &:hover {
+            color: $pink;
+        }
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+

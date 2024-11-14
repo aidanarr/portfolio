@@ -1,0 +1,113 @@
+@import "./variables";
+
+.project {
+    position: relative;
+    min-width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgb(203, 203, 203);
+    transform: scale(95%);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+    background-image: url(../images/song-share.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    &__desc {
+        z-index: 2;
+        position: relative;
+        background-color: $light-pink;
+        padding: 10px 20px;
+        min-height: 50%;
+
+        &--tech {
+            position: absolute;
+            top: -25px;
+            left: 0;
+            display: flex;
+            gap: 15px;
+            padding-left: 20px;
+
+            p {
+                transition: all 0.5s;
+                transform: scale(0%);
+                font-weight: 500;
+            }
+        }
+    }
+
+    &__title {
+        z-index: 2;
+        padding-left: 20px;
+        color: $magenta;
+        text-shadow: 2px 2px 0px white;
+    }
+
+    &__white {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        opacity: 0;
+    }
+
+    &:hover {
+        transform: scale(100%);
+
+        .project__desc {
+            transition: all 0.5s ease-in-out;
+            transform: translateY(40%);
+
+            &--tech p {
+
+                &:nth-child(1) {
+                    transition: 0.5s all 0.5s;
+                    transform: scale(100%);
+                }
+
+                &:nth-child(2) {
+                    transition: 0.8s all 0.5s;
+                    transform: scale(100%);
+                }
+
+                &:nth-child(3) {
+                    transition: 1.1s all 0.5s;
+                    transform: scale(100%);
+                }
+            }
+        }
+
+        .project__title {
+            transition: all 0.5s ease-in-out;
+            transform: translateX(0%)
+        }
+
+        .project__white {
+            transition: all 0.5s ease-in-out;
+            opacity: 0.8;
+        }
+
+    }
+
+    &:not(:hover) {
+        .project__desc {
+            transition: all 0.5s ease-in-out;
+            transform: translateY(200%)
+        }
+
+        .project__title {
+            transition: all 0.5s ease-in-out;
+            transform: translateX(-100%)
+        }
+
+    }
+
+    
+}
+
