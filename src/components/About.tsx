@@ -1,6 +1,17 @@
-
+import { NavigateFunction, useNavigate } from "react-router-dom"
 
 const About = () => {
+
+  const nav: NavigateFunction = useNavigate();
+
+  const handleNavHome = () => {
+    nav("/")
+  }
+
+  const handleNavProjects = () => {
+    nav("/projects")
+  }
+
   return (
     <div className="about">
       <div className="about__title">
@@ -67,8 +78,8 @@ const About = () => {
         </div>
       </section>
       <div className="about__arrows">
-        <i className="fa-solid fa-chevron-right arrow-right"></i>
-        <i className="fa-solid fa-chevron-left arrow-left"></i>
+        <i onClick={handleNavProjects} className="fa-solid fa-chevron-right arrow-right"></i>
+        <i onClick={handleNavHome} className="fa-solid fa-chevron-left arrow-left"></i>
       </div>
     </div>
   )

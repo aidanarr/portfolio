@@ -1,6 +1,13 @@
-
+import { NavigateFunction, useNavigate } from "react-router-dom";
 
 const Contact = () => {
+
+  const nav: NavigateFunction = useNavigate();
+
+  const handleNav = () => {
+    nav("/projects")
+  }
+
   return (
     <div className="contact">
       
@@ -24,7 +31,6 @@ const Contact = () => {
         <div className="link-circles">
             <div className="link-circles__1"></div>
             <div className="link-circles__2"></div>
- 
           </div>
           <div>
             <h3>Correo electrónico</h3>
@@ -41,7 +47,7 @@ const Contact = () => {
         </div>
       </section>
       <div className="contact__arrows">
-        <i className="fa-solid fa-chevron-left arrow-left"></i>
+        <i onClick={handleNav} className="fa-solid fa-chevron-left arrow-left"></i>
       </div>
     </div>
   );

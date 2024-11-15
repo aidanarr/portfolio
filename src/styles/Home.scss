@@ -53,22 +53,29 @@
     }
 
     &__title {
-        font-family: "Lily Script One", system-ui;
-        font-size: 82px;
-        color: $magenta;
-        font-weight: 400;
-        text-shadow: 3px 3px 0px white;
-
-        @media (width < 850px) {
-            text-shadow: 3px 3px 0px $light-pink;
-        }
-
         span {
             font-family: "Lily Script One", system-ui;
             font-size: 82px;
             color: $magenta;
             font-weight: 400;
+            text-shadow: 3px 3px 0px white;
+            opacity: 0;
+            animation: title-animation 0.5s forwards;
+        }
+        
+
+        @media (width < 850px) {
             text-shadow: 3px 3px 0px $light-pink;
+        }
+
+        .surname {
+            span {
+                font-family: "Lily Script One", system-ui;
+                font-size: 82px;
+                color: $magenta;
+                font-weight: 400;
+                text-shadow: 3px 3px 0px $light-pink;
+            }
         }
 
         @media (width < 850px) {
@@ -88,6 +95,25 @@
         font-size: 36px;
         color: $magenta;
         transform: translateY(-10px);
+        width: fit-content;
+
+        span {
+            opacity: 0;
+            animation: subtitle-animation 0.5s forwards;
+
+            &:last-child {
+                &::after {
+                    content: "|";
+                    color: black;
+                    animation: border 1.2s step-end infinite;
+                    text-shadow: none;
+                    margin-left: 5px;
+                    font-weight: 200;
+                    font-size: 30px;
+                }
+            }
+        }
+
 
         @media (width < 850px) {
             transform: translateY(10px);
@@ -139,3 +165,19 @@
         }
     }
 }
+
+@keyframes title-animation {
+    0% { bottom: -2px; opacity: 1; }
+    50% { bottom: 2px; }
+    100% { bottom: 0; opacity: 1; }
+}
+
+@keyframes subtitle-animation {
+    0% { opacity: 1; }
+    100% { opacity: 1; }
+}
+
+@keyframes border {
+    0%, 49% { opacity: 0 }
+    50%, 99% { opacity: 1 }
+  }
