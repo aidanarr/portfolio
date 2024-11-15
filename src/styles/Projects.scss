@@ -51,36 +51,49 @@
     }
 }
 
-.projects__main div {
+.projects__main article {
 
     &:nth-child(1) {
         grid-column-start: 2;
         grid-column-end: 7;
+        opacity: 0;
+        animation: 1s projects-animation forwards;
     }
 
     &:nth-child(2) {
         grid-column-start: 7;
         grid-column-end: 12;
+        opacity: 0;
+        animation: 1s projects-animation 0.2s forwards;
     }
 
     &:nth-child(3) {
         grid-column-start: 1;
         grid-column-end: 5;
+        opacity: 0;
+        animation: 1s projects-animation 0.4s forwards;
     }
 
     &:nth-child(4) {
         grid-column-start: 5;
         grid-column-end: 9;
+        opacity: 0;
+        animation: 1s projects-animation 0.6s forwards;
     }
 
     &:nth-child(5) {
         grid-column-start: 9;
         grid-column-end: 13;
+        opacity: 0;
+        animation: 1s projects-animation 0.8s forwards;
     }
 
 }
 
-
+@keyframes projects-animation {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
 
 
 

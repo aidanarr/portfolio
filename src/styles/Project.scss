@@ -15,8 +15,7 @@
     background-position: top left;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
 
     @media (width < 1200px) {
         transform: scale(100%);
@@ -186,6 +185,9 @@
 
     }
 
-    
 }
+
+
+
+
 
