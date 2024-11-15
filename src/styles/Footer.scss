@@ -17,6 +17,8 @@
         padding: 5% 0;
     }
 
+ 
+
     &__icons {
         display: flex;
         justify-content: center;
@@ -47,6 +49,12 @@
         @media (width < 850px) {
             font-size: 16px;
         }
+
+        @media (width < 450px) {
+            font-size: 14px;
+            text-align: center;
+            padding: 0 10px;
+        }
     }
 }
 
@@ -60,5 +68,9 @@
 
         @media (width < 850px) {
             font-size: 16px;
+        }
+
+        @media (width < 450px) {
+            font-size: 14px;
         }
 }

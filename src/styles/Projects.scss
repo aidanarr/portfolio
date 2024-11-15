@@ -8,6 +8,10 @@
         padding: $smaller-padding;
     }
 
+    @media (width < 850px) {
+        padding: 0 5%;
+    }
+
     &__title {
         margin-bottom: 30px;
     }
@@ -24,6 +28,14 @@
 
         @media (width < 1200px) {
             padding: 0;
+        }
+
+        @media (width < 850px) {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            align-items: center;
+            justify-content: flex-start;
         }
     }
 

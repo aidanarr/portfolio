@@ -32,12 +32,11 @@
         }
         
         @media (width < 450px) {
-            width: 50%;
+            width: 70%;
             height: 80%;
         }
 
     }
-
 }
 
 .main-title {
@@ -94,6 +93,10 @@
             transform: translateY(10px);
             margin-bottom: 5%;
         }
+
+        @media (width < 450px) {
+            font-size: 28px;
+        }
     }
 
     &__circles {
@@ -112,6 +115,11 @@
             height: 280px;
             border-radius: 100%;
             background-color: $light-pink;
+            @media (width < 450px) {
+                width: 200px;
+                height: 200px;
+                transform: translateX(30%);
+            }
         }
 
         &--small {
@@ -120,6 +128,10 @@
             border-radius: 100%;
             background-color: $light-pink;
             transform: translateX(280px);
+
+            @media (width < 450px) {
+                display: none;
+            }
         }
 
         @media (width < 1024px) {

@@ -8,6 +8,10 @@ const Project = () => {
           <p>HTML</p>
           <p>CSS (Sass)</p>
           <p>React</p>
+          <p>React</p>
+          <p>React</p>
+          <p>React</p>
+          <p>React</p>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officia corporis, pariatur magnam minima nulla</p>
       </div>
