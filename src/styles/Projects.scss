@@ -14,6 +14,10 @@
 
     &__title {
         margin-bottom: 30px;
+
+        @media (width < 850px) {
+            text-align: center;
+        }
     }
 
     &__main {

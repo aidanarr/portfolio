@@ -138,6 +138,12 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    row-gap: 0px;
+
+    @media (width < 850px) {
+        flex-direction: column;
+        gap: 5px;
+    }
 
     &__list {
         display: flex;
@@ -154,6 +160,10 @@
             @media (width < 1488px) {
                 text-align: left;
             }
+
+            @media (width < 850px) {
+                line-height: 30px;
+            }
         }
 
         &--bullets {
@@ -163,6 +173,10 @@
 
             span {
                 color: $light-gray;
+            }
+
+            @media (width < 850px) {
+                line-height: 30px;
             }
 
         }
