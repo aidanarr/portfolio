@@ -22,7 +22,6 @@ const Contact = () => {
           <a href="#" target="_blank">
             <div className="cv-pic"></div>
           </a>
-          
           <a href="#" target="_blank">
             Descarga mi currículum
           </a>
@@ -34,14 +33,13 @@ const Contact = () => {
           </div>
           <div>
             <h3>Correo electrónico</h3>
-            <a href="#">blablabla</a>
+            <a href="mailto:aidanarfer@gmail.com" target="_blank">aidanarfer@gmail.com</a>
           </div>
           <div>
             <h3>Redes sociales</h3>
             <ul className="socials">
-              <li>Linkedin <a className="socials__linkedin" href="#">blablabal</a></li>
-              <li>GitHub <a className="socials__github" href="#">blablabal</a></li>
-              <li className="socials__art">Portfolio artístico <span>(por si te pica la curiosidad)</span> <a href="#">blablabal</a></li>
+              <li>Linkedin <a className="socials__linkedin" href="https://www.linkedin.com/in/aida-narros/" target="_blank"><i className="fa-brands fa-linkedin"></i></a></li>
+              <li>GitHub <a className="socials__github" href="https://github.com/aidanarr" target="_blank"><i className="fa-brands fa-github"></i></a></li>
             </ul>
           </div>
         </div>

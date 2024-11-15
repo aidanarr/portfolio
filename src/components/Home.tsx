@@ -30,7 +30,7 @@ const Home = () => {
 
     return characters.map((chara, i) => {
       const styles: React.CSSProperties = {
-        animationDelay: `${1.6 + i / 10}s`,
+        animationDelay: `${1.6 + i / 20}s`,
       };
       return (
         <span key={i} style={styles}>

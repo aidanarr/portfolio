@@ -61,6 +61,11 @@
                 list-style: none;
             }
 
+            i {
+                font-size: 24px;
+                margin-bottom: 5px;
+            }
+
         }
 
         a {
@@ -76,8 +81,6 @@
         position: absolute;
         top: 0;
 
-        
-
         @media (width < 1200px) {
             display: none;
         }
@@ -87,8 +90,14 @@
             height: 10rem;
             background-color: $light-pink;
             border-radius: 100%;
-            transform: translate(-240px, 200px);
+            transform: translate(-220px, 230px);
+            animation: cv-circle 1s forwards;
         }
+    }
+
+    @keyframes cv-circle {
+        0% {transform: translate(-220px, 230px)}
+        100% {transform: translate(-240px, 200px)}
     }
 
     .link-circles {
@@ -107,9 +116,8 @@
             height: 7rem;
             background-color: $light-pink;
             border-radius: 100%;
-            transform: translate(200px, 280px);
-
-            
+            transform: translate(220px, 260px);
+            animation: link-circle-1 1s forwards;
         }
 
         &__2 {
@@ -117,23 +125,25 @@
             height: 15rem;
             background-color: $light-pink;
             border-radius: 100%;
-            transform: translate(250px, -90px);
+            transform: translate(220px, -80px);
+            animation: link-circle-2 1s forwards;
         }
 
+    }
 
+    @keyframes link-circle-1 {
+        0% {transform: translate(220px, 260px)}
+        100% {transform: translate(200px, 280px)}
+    }
+
+    @keyframes link-circle-2 {
+        0% {transform: translate(220px, -80px)}
+        100% {transform: translate(250px, -90px)}
     }
 
     .socials {
         span {
             font-size: 12px;
-        }
-
-        &__art {
-            margin-top: 30px;
-            a {
-                display: block;
-                margin-left: 0px;
-            }
         }
 
         &__linkedin {
