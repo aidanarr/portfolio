@@ -7,6 +7,10 @@
     box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
     z-index: 1;
+
+    @media (width < 850px) {
+      font-size: 20px;
+  }
  }
 
  @import "./Header.scss";
@@ -22,6 +26,12 @@
    height: 100vh;
    display: grid;
    grid-template-rows: 10% 80% 10%;
+
+   @media (width < 850px) {
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+   }
+
  }
 
  a {
@@ -33,6 +43,7 @@
   font: $titles;
   color: $magenta;
   text-shadow: 3px 3px 0px $light-pink;
+  
  }
 
  .arrow-right {
@@ -55,6 +66,10 @@
       margin-right: 6rem;
   }
 
+    @media (width < 850px) {
+      display: none;
+    }
+
  }
 
  .arrow-left {
@@ -75,6 +90,10 @@
 
     @media (width < 1200px) {
       margin-left: 6rem;
+    }
+
+    @media (width < 850px) {
+      display: none;
     }
  }
 

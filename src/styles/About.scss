@@ -11,6 +11,11 @@
         padding: $smaller-padding;
     }
 
+    @media (width < 850px) {
+        padding: 0 5%;
+        align-items: center;
+    }
+
     h3 {
         margin-bottom: 5px;
     }
@@ -23,6 +28,12 @@
         padding: 0 80px;
         flex-grow: 1;
         padding-bottom: 10%;
+
+        @media (width < 850px) {
+            flex-direction: column;
+            gap: 50px;
+            padding: 0 5%;
+        }
 
         &--desc {
             position: relative;
@@ -62,6 +73,12 @@
     width: 100%;
     height: 250px;
 
+    @media (width < 850px) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     &__pic {
         position: absolute;
         width: 230px;
@@ -71,7 +88,7 @@
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top center;
-        transform: translateY(-20px)
+        transform: translateY(-20px);
     }
     
     &__circles {
@@ -79,6 +96,10 @@
         position: absolute;
         left: 30px;
         z-index: 0;
+
+        @media (width < 850px) {
+            left: 15%;
+        }
 
         &--1 {
             width: 230px;
@@ -93,6 +114,10 @@
             border-radius: 100%;
             background-color: $light-pink;
             transform: translate(250px, -250px);
+
+            @media (width < 850px) {
+                display: none;
+            }
         }
 
         &--3 {
@@ -101,6 +126,10 @@
             border-radius: 100%;
             background-color: $light-pink;
             transform: translate(370px, -230px);
+
+            @media (width < 850px) {
+                display: none;
+            }
         }
     }
 }

@@ -11,20 +11,42 @@
         padding: $smaller-padding;
     }
 
+    @media (width < 850px) {
+        flex-direction: column;
+        justify-content: center;
+        padding: 5% 0;
+    }
+
     &__icons {
-        a{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+
+        a {
             font-size: 26px;
-            margin-right: 15px;
             color: $magenta;
     
             &:hover {
                 color: $pink;
             }
         }
+
+        @media (width < 850px) {
+            gap: 25px;
+
+            i {
+                font-size: 30px;
+                padding-bottom: 10px;
+            }
+        }
     }    
 
     p {
         font-size: 14px;
+
+        @media (width < 850px) {
+            font-size: 16px;
+        }
     }
 }
 
@@ -34,5 +56,9 @@
     
         &:hover {
             color: $pink;
+        }
+
+        @media (width < 850px) {
+            font-size: 16px;
         }
 }

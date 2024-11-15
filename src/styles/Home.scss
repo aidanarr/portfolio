@@ -7,6 +7,14 @@
     align-items: center;
     gap: 10px;
 
+    @media (width < 850px) {
+        flex-direction: column;
+    }
+
+    @media (width < 450px) {
+        justify-content: flex-start;
+    }
+
     &__pic {
         background-image: url(../images/me.png);
         background-size: contain;
@@ -18,8 +26,17 @@
         @media (width < 1200px) {
             width: 25%;
         }
-    }
 
+        @media (width < 850px) {
+            width: 45%;
+        }
+        
+        @media (width < 450px) {
+            width: 50%;
+            height: 80%;
+        }
+
+    }
 
 }
 
@@ -30,12 +47,22 @@
     align-items: flex-end;
     position: relative;
 
+    @media (width < 850px) {
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
     &__title {
         font-family: "Lily Script One", system-ui;
         font-size: 82px;
         color: $magenta;
         font-weight: 400;
         text-shadow: 3px 3px 0px white;
+
+        @media (width < 850px) {
+            text-shadow: 3px 3px 0px $light-pink;
+        }
 
         span {
             font-family: "Lily Script One", system-ui;
@@ -44,6 +71,17 @@
             font-weight: 400;
             text-shadow: 3px 3px 0px $light-pink;
         }
+
+        @media (width < 850px) {
+            text-align: center;
+            line-height: 90%;
+        }
+
+        @media (width < 450px) {
+            margin-top: 5%;
+        }
+
+
     }
 
     &__subtitle {
@@ -51,6 +89,11 @@
         font-size: 36px;
         color: $magenta;
         transform: translateY(-10px);
+
+        @media (width < 850px) {
+            transform: translateY(10px);
+            margin-bottom: 5%;
+        }
     }
 
     &__circles {
@@ -58,6 +101,11 @@
         z-index: 0;
         top: -70px;
         left: -100px;
+
+        @media (width < 850px) {
+            top: 110%;
+            transform: translateX(30%);
+        }
         
         &--big {
             width: 280px;
