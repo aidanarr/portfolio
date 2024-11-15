@@ -33,7 +33,36 @@ const About = () => {
           </div>
           <div>
             <h3>Idiomas</h3>
-            <div>blablabla</div>
+            <div className="languages">
+              <div className="languages__list">
+                <div className="languages__list--text">
+                  <p>Español</p>
+                  <p>Inglés</p>
+                </div>
+                <div className="languages__list--bullets">
+                  <p>● ● ● ● ●</p>
+                  <p>● ● ● ● <span>●</span></p>
+                </div>
+              </div>
+              <div className="languages__list">
+                <div className="languages__list--text">
+                  <p>Catalán</p>
+                  <p>Francés</p>
+                </div>
+                <div className="languages__list--bullets">
+                  <p>● ● ● ● <span>●</span></p>
+                  <p>● ● ● <span>● ●</span></p>
+                </div>
+              </div>
+              <div className="languages__list">
+                <div className="languages__list--text">
+                  <p>Chino</p>  
+                </div>
+                <div className="languages__list--bullets">
+                  <p>● <span>● ● ● ●</span></p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

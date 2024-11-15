@@ -1,0 +1,144 @@
+@import "./variables";
+
+.contact {
+    position: relative;
+    padding: $main-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+        flex-grow: 1;
+        padding-bottom: 5%;
+
+        &--cv {
+            position: relative;
+            width: 18rem;
+            text-align: center;
+        }
+        
+        &--links {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            align-items: flex-start;
+            justify-content: center;
+
+            h3 {
+                margin-bottom: 5px;
+            }
+            
+            ul {
+                list-style: none;
+            }
+
+        }
+
+        a {
+            color: $magenta;
+            font-weight: 500;
+            &:hover {
+                color: $pink;
+            }
+        }
+    }
+
+    .cv-circles {
+        position: absolute;
+        top: 0;
+
+        &__1 {
+            width: 10rem;
+            height: 10rem;
+            background-color: $light-pink;
+            border-radius: 100%;
+            transform: translate(-240px, 200px);
+        }
+    }
+
+    .link-circles {
+        position: absolute;
+        top: -25%;
+
+        &__1 {
+            width: 7rem;
+            height: 7rem;
+            background-color: $light-pink;
+            border-radius: 100%;
+            transform: translate(200px, 280px);
+        }
+
+        &__2 {
+            width: 15rem;
+            height: 15rem;
+            background-color: $light-pink;
+            border-radius: 100%;
+            transform: translate(250px, -90px);
+        }
+
+
+    }
+
+    .socials {
+        span {
+            font-size: 12px;
+        }
+
+        &__art {
+            margin-top: 30px;
+            a {
+                display: block;
+                margin-left: 0px;
+            }
+        }
+
+        &__linkedin {
+            margin-left: 20px;
+        }
+
+        &__github {
+            margin-left: 30px;
+        }
+    }
+
+    &__arrows {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+
+.cv-pic {
+    width: 18rem;
+    height: 25.4rem;
+    width: 100%;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
+    background-image: url(../images/cv_es.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+    transition: all 0.2s ease-in-out;
+    transform: scale(98%);
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(100%);
+    }
+
+    @media (width > 1450px) {
+        width: 20rem;
+        height: 28.3rem;
+    }
+}

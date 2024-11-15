@@ -5,6 +5,7 @@ import Footer from './Footer'
 import Home from './Home'
 import About from './About'
 import Projects from './Projects'
+import Contact from './Contact'
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
           } />
           <Route path="/projects" element={
             <Projects />
+          } />
+          <Route path="/contact" element={
+            <Contact />
           } />
         </Routes>
         <Footer />

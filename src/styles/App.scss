@@ -15,6 +15,7 @@
  @import "./About.scss";
  @import "./Projects.scss";
  @import "./Project.scss";
+ @import "./Contact.scss";
 
  .page {
    width: 100vw;
@@ -31,6 +32,7 @@
  h2 {
   font: $titles;
   color: $magenta;
+  text-shadow: 3px 3px 0px $light-pink;
  }
 
  .arrow-right {
@@ -38,7 +40,7 @@
   font-size: 30px;
   bottom: 20px;
   right: 0;
-  margin-right: 150px;
+  margin-right: 10rem;
   color: $magenta;
   cursor: pointer;
   animation: arrow 1s;
@@ -55,7 +57,7 @@
   font-size: 30px;
   bottom: 20px;
   left: 0;
-  margin-left: 150px;
+  margin-left: 10rem;
   color: $magenta;
   cursor: pointer;
   animation: arrow-left 1s;

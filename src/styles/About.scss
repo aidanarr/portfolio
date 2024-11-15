@@ -3,22 +3,32 @@
 .about {
     position: relative;
     padding: $main-padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+        margin-bottom: 5px;
+    }
 
     &__info {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
         gap: 100px;
+        padding: 0 80px;
+        flex-grow: 1;
+        padding-bottom: 10%;
 
         &--desc {
             position: relative;
             width: 100%;
-            height: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             gap: 30px;
-
+            
         }
 
         &--skills {
@@ -89,4 +99,31 @@
             transform: translate(370px, -230px);
         }
     }
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    &__list {
+        display: flex;
+        gap: 8px;
+
+        &--text {
+            text-align: right;
+        }
+
+        &--bullets {
+            color: $magenta;
+            font-size: 17px;
+            white-space: nowrap;
+
+            span {
+                color: $light-gray;
+            }
+        }
+    }
+
+    
 }

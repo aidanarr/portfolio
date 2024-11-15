@@ -15,6 +15,10 @@ const Projects = () => {
                 <Project />
             
         </section>
+        <div className="projects__arrows">
+        <i className="fa-solid fa-chevron-right arrow-right"></i>
+        <i className="fa-solid fa-chevron-left arrow-left"></i>
+      </div>
     </div>
   )
 }

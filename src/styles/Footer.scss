@@ -7,18 +7,28 @@
     align-items: center;
     padding: $main-padding;
 
-    a{
-        font-size: 26px;
-        margin-right: 15px;
-        color: $magenta;
-
-        &:hover {
-            color: $pink;
+    &__icons {
+        a{
+            font-size: 26px;
+            margin-right: 15px;
+            color: $magenta;
+    
+            &:hover {
+                color: $pink;
+            }
         }
-    }
+    }    
 
     p {
         font-size: 14px;
     }
 }
 
+.repo {
+    font-size: 14px;
+        color: $magenta;
+    
+        &:hover {
+            color: $pink;
+        }
+}
