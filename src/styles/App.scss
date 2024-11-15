@@ -50,6 +50,11 @@
     &:hover {
       color: $pink;
     }
+
+    @media (width < 1200px) {
+      margin-right: 6rem;
+  }
+
  }
 
  .arrow-left {
@@ -66,6 +71,10 @@
 
     &:hover {
       color: $pink;
+    }
+
+    @media (width < 1200px) {
+      margin-left: 6rem;
     }
  }
 

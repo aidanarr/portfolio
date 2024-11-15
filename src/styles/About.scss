@@ -7,6 +7,10 @@
     flex-direction: column;
     justify-content: space-between;
 
+    @media (width < 1200px) {
+        padding: $smaller-padding;
+    }
+
     h3 {
         margin-bottom: 5px;
     }
@@ -110,8 +114,17 @@
         display: flex;
         gap: 8px;
 
+        @media (width < 1488px) {
+            min-width: 136.5px;
+            justify-content: space-between;
+        }
+
         &--text {
             text-align: right;
+
+            @media (width < 1488px) {
+                text-align: left;
+            }
         }
 
         &--bullets {
@@ -122,6 +135,7 @@
             span {
                 color: $light-gray;
             }
+
         }
     }
 

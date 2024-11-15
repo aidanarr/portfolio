@@ -7,6 +7,10 @@
     align-items: center;
     padding: $main-padding;
 
+    @media (width < 1200px) {
+        padding: $smaller-padding;
+    }
+
     &__icons {
         a{
             font-size: 26px;

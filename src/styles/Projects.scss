@@ -4,6 +4,10 @@
     position: relative;
     padding: $main-padding;
 
+    @media (width < 1200px) {
+        padding: $smaller-padding;
+    }
+
     &__title {
         margin-bottom: 30px;
     }
@@ -17,6 +21,10 @@
         grid-template-columns: repeat(12, 1fr);
         grid-template-rows: 1fr 1fr;
         justify-items: center;
+
+        @media (width < 1200px) {
+            padding: 0;
+        }
     }
 
     &__arrows {

@@ -6,6 +6,10 @@
     justify-content: flex-end;
     align-items: center;
     padding: $main-padding;
+
+    @media (width < 1200px) {
+        padding: $smaller-padding;
+    }
 }
 
 .nav {
