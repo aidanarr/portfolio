@@ -32,15 +32,33 @@ const About = () => {
         <div className="about__info--skills">
           <div>
             <h3>Tecnologías</h3>
-            <div>blablabla</div>
+            <div className="skills-items">
+              <p>HTML5</p>
+              <p>CSS</p>
+              <p>Sass</p>
+              <p>JavaScript ES6</p>
+              <p>React</p>
+              <p>Node.js</p>
+              <p>MySQL</p>
+              <p>MongoDB</p>
+              <p>TypeScript</p>
+            </div>
           </div>
           <div>
             <h3>Software</h3>
-            <div>blablabla</div>
+            <div className="skills-items">
+              <p>Visual Studio Code</p>
+              <p>Postman</p>
+              <p>MySQL Workbench</p>
+              <p>Figma</p>
+              <p>Photoshop</p>
+              <p>InDesign</p>
+              <p>Microsoft Office</p>
+            </div>
           </div>
           <div>
             <h3>Habilidades</h3>
-            <div>blablabla</div>
+            <div className="skills-items">blablabla</div>
           </div>
           <div>
             <h3>Idiomas</h3>
