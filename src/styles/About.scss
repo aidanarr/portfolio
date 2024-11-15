@@ -155,11 +155,7 @@
         }
 
         &--text {
-            text-align: right;
-
-            @media (width < 1488px) {
-                text-align: left;
-            }
+            text-align: left;
 
             @media (width < 850px) {
                 line-height: 30px;
