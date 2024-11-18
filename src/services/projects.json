@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Song Share",
+        "technologies": ["HTML", "CSS (Sass)", "React", "Node.js", "MongoDB", "Mongoose"],
+        "img": "song-share",
+        "url": "https://song-share-sigma.vercel.app/"
+    },
+    {
+        "title": "Nana's Quest",
+        "technologies": ["HTML", "CSS (Sass)", "React"],
+        "img": "nanas-quest",
+        "url": "https://aidanarr.github.io/nanas-quest/"
+    },
+    {
+        "title": "Pokémon Finder",
+        "technologies": ["HTML", "CSS (Sass)", "React"],
+        "img": "pkm-finder",
+        "url": "https://aidanarr.github.io/pokemon-finder/"
+    },
+    {
+        "title": "OC Relationship Chart",
+        "technologies": ["HTML", "CSS (Sass)", "React"],
+        "img": "relationships",
+        "url": "https://aidanarr.github.io/oc-relationship-chart/"
+    },
+    {
+        "title": "Books4You",
+        "technologies": ["HTML", "CSS (Sass)", "React", "Node.js", "MySQL"],
+        "img": "books",
+        "url": "https://project-promo-x-module-4-team-4.onrender.com/"
+    }
+]

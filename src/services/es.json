@@ -1,0 +1,61 @@
+[
+    {
+        "section": "header",
+        "text": {
+            "home": "Inicio",
+            "about": "Sobre mí",
+            "projects": "Proyectos",
+            "contact": "Contacto"
+        }
+    },
+    {
+        "section": "footer",
+        "text": {
+            "credits": "creado y diseñado por Aida Narros",
+            "repo": "repositorio"
+        }
+    },
+    {
+        "section": "about",
+        "text": {
+            "about": "Sobre mí",
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit expedita voluptatum rem beatae dolor excepturi? Voluptatem hic placeat quisquam dolorem sint pariatur consequatur a, incidunt rerum voluptas maiores voluptatum dolore!",
+            "tech": "Tecnologías",
+            "skills": "Habilidades",
+            "skill": {
+                "git": "Git/GitHub",
+                "scrum": "Scrum/Agile",
+                "layout": "Maquetación web",
+                "design": "Diseño UI",
+                "responsive": "Diseño responsive",
+                "api": "Creación de API REST"
+            },
+            "lang": "Idiomas",
+            "es": "Español",
+            "en": "Inglés",
+            "ca": "Catalán",
+            "fr": "Francés",
+            "zh": "Chino"
+        }
+    },
+    {
+        "section": "projects",
+        "text": {
+            "proj": "Proyectos",
+            "proj1": "Aplicación web para crear, consultar y modificar registros sobre canciones y artistas.",
+            "proj2": "Juego de género novela visual en el que obtienes distintos finales dependiendo de las opciones que escojas.",
+            "proj3": "Aplicación que muestra diagramas de relaciones entre distintos personajes.",
+            "proj4": "Aplicación para listar, filtrar y consultar detalles sobre todos los pokémon.",
+            "proj5": "Crear y consultar tarjetas sobre libros."
+        }
+    },
+    {
+        "section": "contact",
+        "text": {
+            "contact": "Contacto",
+            "email": "Correo electrónico",
+            "socials": "Redes sociales",
+            "resume": "Descarga mi currículum"
+        }
+    }
+]

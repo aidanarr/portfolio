@@ -1,0 +1,61 @@
+[
+    {
+        "section": "header",
+        "text": {
+            "home": "Home",
+            "about": "About",
+            "projects": "Projects",
+            "contact": "Contact"
+        }
+    },
+    {
+        "section": "footer",
+        "text": {
+            "credits": "designed and created by Aida Narros",
+            "repo": "repository"
+        }
+    },
+    {
+        "section": "about",
+        "text": {
+            "about": "About me",
+            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit expedita voluptatum rem beatae dolor excepturi? Voluptatem hic placeat quisquam dolorem sint pariatur consequatur a, incidunt rerum voluptas maiores voluptatum dolore!",
+            "tech": "Technologies",
+            "skills": "Skills",
+            "skill": {
+                "git": "Git/GitHub",
+                "scrum": "Scrum/Agile",
+                "layout": "Web Layout",
+                "design": "UI Design",
+                "responsive": "Responsive Design",
+                "api": "REST API Creation"
+            },
+            "lang": "Languages",
+            "es": "Spanish",
+            "en": "English",
+            "ca": "Catalan",
+            "fr": "French",
+            "zh": "Chinese"
+        }
+    },
+    {
+        "section": "projects",
+        "text": {
+            "proj": "Projects",
+            "proj1": "Create, edit and browse cards with information about songs and artists.",
+            "proj2": "Visual novel game in which you can get different endings depending on your choices.",
+            "proj3": "Index of characters where you can render a diagram of their relationships.",
+            "proj4": "Filter pokémon by generation, type and name and review their details.",
+            "proj5": "Create and review book cards."
+        }
+    },
+    {
+        "section": "contact",
+        "text": {
+            "contact": "Contact",
+            "email": "Email",
+            "socials": "Socials",
+            "resume": "Download my resume"
+        }
+    }
+]

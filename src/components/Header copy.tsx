@@ -1,6 +1,11 @@
 import { Link } from "react-router-dom"
+import { FC } from "react"
 
-const Header = ({text, setLang}:{text:{[key: string]: string | undefined}, setLang:void}) => {
+interface sectionText {
+  [key: string]: string
+}
+
+const Header: FC<sectionText> = ({text}:{text:sectionText}) => {
   
   const {home, about, projects, contact}  = text;
   

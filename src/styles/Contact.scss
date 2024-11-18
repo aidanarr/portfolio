@@ -102,7 +102,7 @@
 
     .link-circles {
         position: absolute;
-        top: -25%;
+        top: -50%;
         @media (width < 1200px) {
             left: -30%;
         }
@@ -170,7 +170,6 @@
     width: 100%;
     margin-bottom: 10px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.285);
-    background-image: url(../images/cv_es.png);
     background-repeat: no-repeat;
     background-position: top right;
     background-size: contain;
@@ -186,4 +185,12 @@
         width: 20rem;
         height: 28.3rem;
     }
+}
+
+.cv-es {
+    background-image: url(../images/cv_es.png);
+}
+
+.cv-en {
+    background-image: url(../images/cv_en.png);
 }

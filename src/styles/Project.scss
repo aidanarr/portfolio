@@ -9,7 +9,6 @@
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     overflow: hidden;
-    background-image: url(../images/song-share.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -195,6 +194,26 @@
 
     }
 
+}
+
+.song-share {
+    background-image: url(../images/song-share.png);
+}
+
+.nanas-quest {
+    background-image: url(../images/nanas-quest.png);
+}
+
+.pkm-finder {
+    background-image: url(../images/pkm-finder.png);
+}
+
+.relationships {
+    background-image: url(../images/relationships.png);
+}
+
+.books {
+    background-image: url(../images/books.png);
 }
 
 

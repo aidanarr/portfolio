@@ -6,7 +6,7 @@ const Home = () => {
 
   const nav: NavigateFunction = useNavigate();
 
-  const handleNav = () => {
+  const handleNav = ():void => {
     nav("/about")
   }
 

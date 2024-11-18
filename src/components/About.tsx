@@ -1,21 +1,32 @@
+import { ReactNode } from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom"
 
-const About = () => {
+const About = ({text}:{text:{[key: string]: string | undefined}}) => {
 
   const nav: NavigateFunction = useNavigate();
 
-  const handleNavHome = () => {
+  const handleNavHome = ():void => {
     nav("/")
   }
 
-  const handleNavProjects = () => {
+  const handleNavProjects = ():void => {
     nav("/projects")
+  }
+
+  const renderSkills = ():ReactNode => {
+    const skills:{[key: string]: string} = text.skill;
+    const skillsArray:string[] = [skills.git, skills.scrum, skills.layout, skills.design, skills.responsive, skills.api];
+
+    return skillsArray.map((item:string) => {
+      return <p>{item}</p>
+    })
+
   }
 
   return (
     <div className="about">
       <div className="about__title">
-        <h2>Sobre mí</h2>
+        <h2>{text.about}</h2>
       </div>
       <section className="about__info">
         <article className="about__info--desc">
@@ -27,11 +38,11 @@ const About = () => {
               <div className="about-img__circles--3"></div>
             </div>
           </div>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit expedita voluptatum rem beatae dolor excepturi? Voluptatem hic placeat quisquam dolorem sint pariatur consequatur a, incidunt rerum voluptas maiores voluptatum dolore!</p>
+          <p>{text.desc}</p>
         </article>
         <div className="about__info--skills">
           <div>
-            <h3>Tecnologías</h3>
+            <h3>{text.tech}</h3>
             <div className="skills-items">
               <p>HTML5</p>
               <p>CSS</p>
@@ -57,16 +68,18 @@ const About = () => {
             </div>
           </div>
           <div>
-            <h3>Habilidades</h3>
-            <div className="skills-items">blablabla</div>
+            <h3>{text.skills}</h3>
+            <div className="skills-items">
+              {renderSkills()}
+            </div>
           </div>
           <div>
-            <h3>Idiomas</h3>
+            <h3>{text.lang}</h3>
             <div className="languages">
               <div className="languages__list">
                 <div className="languages__list--text">
-                  <p>Español</p>
-                  <p>Inglés</p>
+                  <p>{text.es}</p>
+                  <p>{text.en}</p>
                 </div>
                 <div className="languages__list--bullets">
                   <p>● ● ● ● ●</p>
@@ -75,8 +88,8 @@ const About = () => {
               </div>
               <div className="languages__list">
                 <div className="languages__list--text">
-                  <p>Catalán</p>
-                  <p>Francés</p>
+                  <p>{text.ca}</p>
+                  <p>{text.fr}</p>
                 </div>
                 <div className="languages__list--bullets">
                   <p>● ● ● ● <span>●</span></p>
@@ -85,7 +98,7 @@ const About = () => {
               </div>
               <div className="languages__list">
                 <div className="languages__list--text">
-                  <p>Chino</p>  
+                  <p>{text.zh}</p>  
                 </div>
                 <div className="languages__list--bullets">
                   <p>● <span>● ● ● ●</span></p>
