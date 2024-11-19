@@ -1,10 +1,10 @@
 import { NavigateFunction, useNavigate } from "react-router-dom";
 
-const Contact = ({text}:{text:{[key: string]: string | undefined}}) => {
+const Contact = ({text, lang}:{text:{[key: string]: string | undefined}, lang:string}) => {
 
   const nav: NavigateFunction = useNavigate();
 
-  const handleNav = () => {
+  const handleNav = ():void => {
     nav("/projects")
   }
 
@@ -19,7 +19,7 @@ const Contact = ({text}:{text:{[key: string]: string | undefined}}) => {
             <div className="cv-circles__1"></div>
           </div>
           <a href="#" target="_blank">
-            <div className="cv-pic cv-es"></div>
+            <div className={`cv-pic cv-${lang}`}></div>
           </a>
           <a href="#" target="_blank">
             {text.resume}

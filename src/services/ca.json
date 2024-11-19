@@ -1,0 +1,61 @@
+[
+    {
+        "section": "header",
+        "text": {
+            "home": "Inici",
+            "about": "Sobre mi",
+            "projects": "Projectes",
+            "contact": "Contacte"
+        }
+    },
+    {
+        "section": "footer",
+        "text": {
+            "credits": "creat i dissenyat per Aida Narros",
+            "repo": "repositori"
+        }
+    },
+    {
+        "section": "about",
+        "text": {
+            "about": "Sobre mi",
+            "desc": "Hola! Soc Aida, i soc desarrolladora Frontend. M'apassiona la maquetació web i la programació amb JavaScript, en concret utilitzant React. He creat una bona varietat de projectes amb les tecnologies que conec, des d'aplicacions per a fer operacions CRUD fins a un minijoc (vos invite a jugar-ho!). Soc una persona creativa, curiosa i amb moltes ganes d'aportar tot el que sé en un projecte professional i continuar aprenent en el camí!",
+            "tech": "Tecnologies",
+            "skills": "Habilitats",
+            "skill": {
+                "git": "Git/GitHub",
+                "scrum": "Scrum/Agile",
+                "layout": "Maquetació web",
+                "design": "Disseny UI",
+                "responsive": "Disseny responsive",
+                "api": "Creació d'API REST"
+            },
+            "lang": "Llengües",
+            "es": "Espanyol",
+            "en": "Anglés",
+            "ca": "Català",
+            "fr": "Francés",
+            "zh": "Xinés"
+        }
+    },
+    {
+        "section": "projects",
+        "text": {
+            "proj": "Projectes",
+            "proj1": "Aplicació web per a crear, consultar i modificar registres sobre cançons i artistes.",
+            "proj2": "Joc de gènere novel·la visual on es poden obtindre diferents finals segons les opcions que tries.",
+            "proj3": "Aplicació per a llistar, filtrar i consultar informació sobre tots els pokémon.",
+            "proj4": "Aplicació que mostra diagrames de relacions entre personatges.",
+            "proj5": "Crear y consultar targetes sobre llibres."
+        }
+    },
+    {
+        "section": "contact",
+        "text": {
+            "contact": "Contacte",
+            "email": "Correu electrònic",
+            "socials": "Xarxes socials",
+            "resume": "Descàrrega el meu currículum"
+        }
+    }
+]

@@ -2,11 +2,12 @@
 
 .about {
     position: relative;
-    height: auto;
+    max-height: 100%;
     padding: $main-padding;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: scroll;
 
     @media (width < 1200px) {
         padding: $smaller-padding;
@@ -28,6 +29,10 @@
         gap: 100px;
         padding: 0 80px;
         flex-grow: 1;
+
+        @media (width < 1200px) {
+            padding: 0 30px;
+        }
 
         @media (width < 850px) {
             flex-direction: column;

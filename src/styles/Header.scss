@@ -65,32 +65,97 @@
     }
 }
 
-.lang {
-    width: 30px;
-    height: 30px;
-    border-radius: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    background-color: $magenta;
-    cursor: pointer;
+.lang-container {
+    position: absolute;
+    right: 5%;
+    top: 3.5%;
+    z-index: 5;
 
-    &:hover {
-        background-color: $pink;
-    }
-
-    p {
-        color: white;
-        font-weight: 500;
-    }
-
-    @media (width < 850px) {
-        padding: 17px;
+    @media (width < 520px) {
+        right: 2%;
+        top: 2%;
     }
 
     @media (width < 450px) {
-        padding: 5px;
+        top: 2%;
+        right: 5%;
     }
+
+    @media (width < 380px) {
+        transform: scale(0.7);
+        right: 1%;
+        top: 1%;
+    }
+}
+
+.lang {
+    position: relative;
+
+    &__code {
+        color: white;
+        font-weight: 500;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        background-color: $magenta;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $pink;
+        }
+
+        @media (width < 850px) {
+            padding: 17px;
+        }
     
+        @media (width < 450px) {
+            padding: 5px;
+        }
+    }
+
+    
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 120%;
+    left: 15%;
+
+    &__code {
+        color: $magenta;
+        display: block;
+        cursor: pointer;
+        font-weight: 600;
+        transform: scaleY(0) translateY(-20px);
+        transform-origin: top center;
+        animation: lang-animation 0.2s forwards;
+        &:hover {
+            color: $pink;
+        }
+    }
+}
+
+.reverse {
+    transform: scaleY(1) translateY(-0px);
+    transform-origin: top center;
+    animation: lang-animation-reverse 0.2s forwards;
+}
+
+@keyframes lang-animation {
+    0% {transform: scaleY(0) translateY(-20px)};
+    100% {transform: scaleY(1) translateY(-0px)}
+}
+
+@keyframes lang-animation-reverse {
+    0% {transform: scaleY(1) translateY(-0px)}
+    100% {transform: scaleY(0) translateY(-20px)}
+}
+
+.hidden {
+    display: none;
 }

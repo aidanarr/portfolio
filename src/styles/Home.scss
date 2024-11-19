@@ -75,7 +75,10 @@
                 color: $magenta;
                 font-weight: 400;
                 text-shadow: 3px 3px 0px $light-pink;
+
+                
             }
+
         }
 
         @media (width < 850px) {
@@ -84,7 +87,8 @@
         }
 
         @media (width < 450px) {
-            margin-top: 5%;
+            margin-top: 10%;
+            padding: 0 5px;
         }
 
     }

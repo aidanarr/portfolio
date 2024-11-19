@@ -19,7 +19,7 @@
         "section": "about",
         "text": {
             "about": "About me",
-            "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit expedita voluptatum rem beatae dolor excepturi? Voluptatem hic placeat quisquam dolorem sint pariatur consequatur a, incidunt rerum voluptas maiores voluptatum dolore!",
+            "desc": "Hello, good fellow! I'm Aida, and I'm a Frontend Developer. I'm passionate about building websites with CSS and JavaScript, specifically using React, my favourite programming tool. I've created a good variety of projects using the technologies I know, from a web app to make CRUD operations to even a little game (which you can play if you want!). I'm very curious and creative, and I'm eager to contribute everything I can to a professional project, while I keep learning in the process!",
             "tech": "Technologies",
             "skills": "Skills",
             "skill": {
@@ -44,8 +44,8 @@
             "proj": "Projects",
             "proj1": "Create, edit and browse cards with information about songs and artists.",
             "proj2": "Visual novel game in which you can get different endings depending on your choices.",
-            "proj3": "Index of characters where you can render a diagram of their relationships.",
-            "proj4": "Filter pokémon by generation, type and name and review their details.",
+            "proj3": "Filter pokémon by generation, type and/or name and review their details.",
+            "proj4": "Index of characters where you can render a diagram of their relationships.",
             "proj5": "Create and review book cards."
         }
     },

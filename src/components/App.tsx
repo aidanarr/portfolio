@@ -9,7 +9,7 @@ import Projects from './Projects'
 import Contact from './Contact'
 import spanish from "../services/es.json"
 import english from "../services/en.json"
-
+import catalan from "../services/ca.json"
 
 const App = () => {
 
@@ -20,21 +20,23 @@ const App = () => {
     }
   } 
 
-  const [text, setText] = useState<textObject[]>(english)
-  const [lang, setLang] = useState<string>("en")
+  const [text, setText] = useState<textObject[]>(spanish)
+  const [lang, setLang] = useState<string>("es")
 
   useEffect(() => {
     if (lang === "es") {
       setText(spanish)
     } else if (lang === "en") {
       setText(english)
+    } else {
+      setText(catalan)
     }
   }, [lang])
 
   return (
     <>
       <div className="page">
-        <Header text={text[0].text} setLang={setLang} />
+        <Header text={text[0].text} setLang={setLang} lang={lang} />
         <Routes>
           <Route path="/" element={
             <Home />
@@ -46,7 +48,7 @@ const App = () => {
             <Projects text={text[3].text} />
           } />
           <Route path="/contact" element={
-            <Contact text={text[4].text} />
+            <Contact lang={lang} text={text[4].text} />
           } />
         </Routes>
         <Footer text={text[1].text} />
