@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom";
 
-
 const Home = () => {
 
   const nav: NavigateFunction = useNavigate();

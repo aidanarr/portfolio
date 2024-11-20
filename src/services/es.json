@@ -19,7 +19,7 @@
         "section": "about",
         "text": {
             "about": "Sobre mí",
-            "desc": "¡Hola, caracola! Soy Aida, y soy desarrolladora Frontend. Me apasiona la maquetación web y la programación con JavaScript, en concreto utilizando React. He creado una gran variedad de proyectos con las tecnologías que conozco, desde aplicaciones para realizar operaciones CRUD hasta un minijuego (¡al que os invito a jugar!). Soy una persona creativa, curiosa y con muchas ganas de aportar todo lo que sé en un proyecto profesional y seguir aprendiendo en el camino.",
+            "desc": "¡Hola! Soy Aida, y soy desarrolladora Frontend. Me apasiona la maquetación web y la programación con JavaScript, en concreto utilizando React. He creado una gran variedad de proyectos con las tecnologías que conozco, desde aplicaciones para realizar operaciones CRUD hasta un minijuego (¡al que os invito a jugar!). Soy una persona creativa, curiosa y con muchas ganas de aportar todo lo que sé en un proyecto profesional y seguir aprendiendo en el camino.",
             "tech": "Tecnologías",
             "skills": "Habilidades",
             "skill": {

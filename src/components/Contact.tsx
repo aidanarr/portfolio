@@ -1,6 +1,7 @@
 import { NavigateFunction, useNavigate } from "react-router-dom";
+import { contactObject } from "../services/lang-interface.ts"
 
-const Contact = ({text, lang}:{text:{[key: string]: string | undefined}, lang:string}) => {
+const Contact = ({text, lang}:{text:contactObject, lang:string}) => {
 
   const nav: NavigateFunction = useNavigate();
 

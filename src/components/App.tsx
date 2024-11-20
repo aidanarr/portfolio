@@ -10,17 +10,11 @@ import Contact from './Contact'
 import spanish from "../services/es.json"
 import english from "../services/en.json"
 import catalan from "../services/ca.json"
+import { headerObject, footerObject, aboutObject, projObject, contactObject } from "../services/lang-interface.ts"
 
 const App = () => {
 
-  interface textObject {
-    section: string,
-    text: {
-      [key: string]:string | undefined
-    }
-  } 
-
-  const [text, setText] = useState<textObject[]>(spanish)
+  const [text, setText] = useState(spanish)
   const [lang, setLang] = useState<string>("es")
 
   useEffect(() => {
@@ -33,25 +27,32 @@ const App = () => {
     }
   }, [lang])
 
+  const headerText:headerObject = text[0].text as headerObject;
+  const footerText:footerObject = text[1].text as footerObject;
+  const aboutText:aboutObject = text[2].text as aboutObject;
+  const projText:projObject = text[3].text as projObject;
+  const contactText:contactObject = text[4].text as contactObject;
+
+
   return (
     <>
       <div className="page">
-        <Header text={text[0].text} setLang={setLang} lang={lang} />
+        <Header text={headerText} setLang={setLang} lang={lang} />
         <Routes>
           <Route path="/" element={
             <Home />
           } />
           <Route path="/about" element={
-            <About text={text[2].text} />
+            <About text={aboutText} />
           } />
           <Route path="/projects" element={
-            <Projects text={text[3].text} />
+            <Projects text={projText} />
           } />
           <Route path="/contact" element={
-            <Contact lang={lang} text={text[4].text} />
+            <Contact lang={lang} text={contactText} />
           } />
         </Routes>
-        <Footer text={text[1].text} />
+        <Footer text={footerText} />
       </div>
     </>
   )

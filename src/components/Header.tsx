@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom"
-import { ReactNode, useState } from "react";
+import { ReactNode, useState, Dispatch, SetStateAction } from "react";
+import { headerObject } from "../services/lang-interface.ts"
 
-const Header = ({text, setLang, lang}:{text:{[key: string]: string | undefined}, setLang:void, lang:string}) => {
+const Header = ({text, setLang, lang}:{text:headerObject, setLang:Dispatch<SetStateAction<string>>, lang:string}) => {
   
   const {home, about, projects, contact}  = text;
   const [hidden, setHidden] = useState<boolean>(true);
@@ -20,8 +21,9 @@ const Header = ({text, setLang, lang}:{text:{[key: string]: string | undefined},
     }
   }
 
-  const handleClickLang = (ev) => {
-    setLang(ev.target.id)
+  const handleClickLang = (ev:React.MouseEvent<HTMLElement>):void => {
+    const id:string = (ev.target as Element).id;
+    setLang(id)
   }
 
   const renderDropdown = ():ReactNode => {

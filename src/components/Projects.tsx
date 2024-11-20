@@ -1,8 +1,9 @@
 import Project from "./Project"
 import { NavigateFunction, useNavigate } from "react-router-dom"
 import projects from "../services/projects.json"
+import { projObject } from "../services/lang-interface.ts"
 
-const Projects = ({text}:{text:{[key: string]: string | undefined}}) => {
+const Projects = ({text}:{text:projObject}) => {
 
   const nav: NavigateFunction = useNavigate();
 

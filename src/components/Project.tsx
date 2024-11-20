@@ -1,4 +1,4 @@
-import { ReactNode } from "react"
+import { ReactNode } from "react";
 
 const Project = ({desc, info}:{desc: string | undefined, info:{title:string, technologies:(string)[], img:string, url:string}}) => {
 

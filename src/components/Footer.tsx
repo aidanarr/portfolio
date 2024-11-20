@@ -1,6 +1,6 @@
+import { footerObject } from "../services/lang-interface.ts"
 
-
-const Footer = ({text}:{text:{[key: string]: string | undefined}}) => {
+const Footer = ({text}:{text:footerObject}) => {
   return (
     <footer className="footer">
         <div className="footer__icons">

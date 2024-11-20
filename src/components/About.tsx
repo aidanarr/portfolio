@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom"
+import { aboutObject } from "../services/lang-interface.ts"
 
-const About = ({text}:{text:{[key: string]: string | undefined}}) => {
+const About = ({text}:{text:aboutObject}) => {
 
   const nav: NavigateFunction = useNavigate();
 
