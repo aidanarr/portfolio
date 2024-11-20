@@ -9,6 +9,12 @@ const Contact = ({text, lang}:{text:contactObject, lang:string}) => {
     nav("/projects")
   }
 
+  const renderLink = ():string => {
+    if (lang === "en"){
+      return "https://drive.google.com/file/d/1Lws6lEBAUkIrhSUqCVzpKg2h8Da-GI2Q/view?usp=sharing"
+    } else return "https://drive.google.com/file/d/1RktLO2Lj847BWvf3yIxm3wOJE5rlroMc/view?usp=sharing"
+  }
+
   return (
     <div className="contact">
       <div className="contact__title">
@@ -19,10 +25,10 @@ const Contact = ({text, lang}:{text:contactObject, lang:string}) => {
           <div className="cv-circles">
             <div className="cv-circles__1"></div>
           </div>
-          <a href="#" target="_blank">
+          <a href={renderLink()} target="_blank">
             <div className={`cv-pic cv-${lang}`}></div>
           </a>
-          <a href="#" target="_blank">
+          <a href={renderLink()} target="_blank">
             {text.resume}
           </a>
         </div>
