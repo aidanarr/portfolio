@@ -61,11 +61,14 @@
             text-shadow: 3px 3px 0px white;
             opacity: 0;
             animation: title-animation 0.5s forwards;
+
+            @media (width < 850px) {
+                text-shadow: 3px 3px 0px $light-pink;
+            }
         }
-        
 
         @media (width < 850px) {
-            text-shadow: 3px 3px 0px $light-pink;
+            margin-top: 15px;
         }
 
         .surname {

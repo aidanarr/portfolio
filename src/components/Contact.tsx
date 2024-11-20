@@ -37,7 +37,7 @@ const Contact = ({text, lang}:{text:contactObject, lang:string}) => {
             <div className="link-circles__1"></div>
             <div className="link-circles__2"></div>
           </div>
-          <div>
+          <div className="email-box">
             <h3>{text.email}</h3>
             <a href="mailto:aidanarfer@gmail.com" target="_blank">aidanarfer@gmail.com</a>
           </div>

@@ -30,6 +30,10 @@
         grid-template-rows: 1fr 1fr;
         justify-items: center;
 
+        @media (width < 1350px) {
+            padding: 0 1rem;
+        }
+
         @media (width < 1200px) {
             padding: 0;
         }
