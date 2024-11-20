@@ -1,6 +1,6 @@
 # PORTFOLIO
 
-![Icon of myself](/public/favicon.png)
+
 
 With this portfolio I aim to present you my profile as Frontend Developer. Here you'll be able to find more info about me and my projects. Please take a look! :)
 
