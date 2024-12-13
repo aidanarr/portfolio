@@ -1,13 +1,21 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom";
 
-const Home = () => {
+const Home = ({handleKeyDown}:{handleKeyDown(ev: KeyboardEvent, left: string, right: string):void}) => {
 
   const nav: NavigateFunction = useNavigate();
 
   const handleNav = ():void => {
     nav("/about")
   }
+
+  useEffect(() => {
+    document.addEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/", "/about"));
+
+    return () => {
+      document.removeEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/", "/about"))
+    };
+  }, [])
 
   const renderTitle = (name: string, delay: number): ReactNode => {
     const characters: string[] = name.split("");

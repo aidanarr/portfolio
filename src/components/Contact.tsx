@@ -1,9 +1,18 @@
 import { NavigateFunction, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 import { contactObject } from "../services/lang-interface.ts"
 
-const Contact = ({text, lang}:{text:contactObject, lang:string}) => {
+const Contact = ({text, lang, handleKeyDown}:{text:contactObject, lang:string, handleKeyDown(ev: KeyboardEvent, left: string, right: string):void}) => {
 
   const nav: NavigateFunction = useNavigate();
+
+  useEffect(() => {
+    document.addEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/projects", "/contact"));
+
+    return () => {
+      document.removeEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/projects", "/contact"))
+    };
+  }, [])
 
   const handleNav = ():void => {
     nav("/projects")

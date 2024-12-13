@@ -4,7 +4,7 @@ const Project = ({desc, info}:{desc: string | undefined, info:{title:string, tec
 
   const renderTechnologies = ():ReactNode => {
     return info.technologies.map((item:string) => {
-      return <p>{item}</p>
+      return <p key={item}>{item}</p>
     })
   }
 

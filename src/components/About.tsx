@@ -1,10 +1,18 @@
-import { ReactNode } from "react";
+import { ReactNode, useEffect } from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom"
 import { aboutObject } from "../services/lang-interface.ts"
 
-const About = ({text}:{text:aboutObject}) => {
+const About = ({text, handleKeyDown}:{text:aboutObject, handleKeyDown(ev: KeyboardEvent, left: string, right: string):void}) => {
 
   const nav: NavigateFunction = useNavigate();
+
+  useEffect(() => {
+    document.addEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/", "/projects"));
+
+    return () => {
+      document.removeEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/", "/projects"))
+    };
+  }, [])
 
   const handleNavHome = ():void => {
     nav("/")
@@ -19,7 +27,7 @@ const About = ({text}:{text:aboutObject}) => {
     const skillsArray:string[] = [skills.git, skills.scrum, skills.layout, skills.design, skills.responsive, skills.api];
 
     return skillsArray.map((item:string) => {
-      return <p>{item}</p>
+      return <p key={item}>{item}</p>
     })
 
   }

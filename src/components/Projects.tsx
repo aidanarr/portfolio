@@ -1,11 +1,20 @@
 import Project from "./Project"
+import { useEffect } from "react";
 import { NavigateFunction, useNavigate } from "react-router-dom"
 import projects from "../services/projects.json"
 import { projObject } from "../services/lang-interface.ts"
 
-const Projects = ({text}:{text:projObject}) => {
+const Projects = ({text, handleKeyDown}:{text:projObject, handleKeyDown(ev: KeyboardEvent, left: string, right: string):void}) => {
 
   const nav: NavigateFunction = useNavigate();
+
+  useEffect(() => {
+    document.addEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/about", "/contact"));
+
+    return () => {
+      document.removeEventListener("keydown", (ev:KeyboardEvent) => handleKeyDown(ev, "/about", "/contact"))
+    };
+  }, [])
 
   const handleNavAbout = ():void => {
     nav("/about")
